@@ -25,7 +25,15 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "main": "./lib",
+  "main": "./app",
+  "assembly": {
+    "namespace": "www/crawler",
+    "components": [
+      "fetcher",
+      "frontier",
+      "urlset"
+    ]
+  },
   "dependencies": {
     "cheerio": "^0.19.0",
     "raw-body": "^2.1.2",
